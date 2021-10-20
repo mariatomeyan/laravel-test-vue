@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@viewport {
+    viewport-fit: contain;
+}
+
+input:not([type='checkbox']) {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight bg-white;
+}
+
+.focus:focus, input:focus {
+    @apply outline-none ring border-gray-600;
+}
+
+label {
+    @apply block mb-2 text-sm text-gray-700;
+}
+
+
+button {
+    @apply relative inline-flex items-center px-4 py-2 border border-b-4 text-sm leading-5 font-medium rounded-md;
+}
+
+button:hover {
+    @apply border-primary;
+}
+
+button:focus {
+    @apply outline-none ring;
+}
+
+body {
+    @apply font-body;
+}
+
+a {
+    @apply text-blue-500 font-bold;
+}
+
+a:hover {
+    @apply underline;
+}
+
+h1 {
+    @apply text-lg;
+}
+h2 {
+    @apply text-base;
+}
+h3 {
+    @apply text-sm;
+}
+
+hr {
+    border-color: var(--primary);
+}
+
+.center {
+    margin:0 auto;
+}
+
+html, body, p {
+    font-family: 'proxima-nova', sans-serif;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, .header {
+    font-family: 'bebas-neue-pro-semiexpanded', "Arial", sans-serif;
+    text-transform: uppercase;
+    @apply tracking-wide;
+}
+
+h1.alt-header, h2.alt-header, h3.alt-header, h4.alt-header, {
+    font-family: 'acumin-pro-condensed"', "Arial", sans-serif;
+    letter-spacing: normal;
+    text-transform: none;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.alt {
+    @apply bg-white;
+}
+
+.inline-list {
+    li {
+        @apply inline-block pr-1 ;
+
+    }
+}
+
+.piped-list{
+    li {
+        position: relative;
+    }
+    li:not(:first-child)::before {
+        content: "|";
+        position: absolute;
+        left: -0.5rem;
+        @apply text-gray-300;
+    }
+}
+
+#previews.preview:first-child {
+    @apply border-primary;
+}
+
+#breadcrumb {
+    a {
+        position: relative;
+    }
+    a:not(:first-child)::before {
+        content: ">";
+        position: absolute;
+        left: -0.60rem;
+        @apply text-gray-400;
+    }
+}
+
+.account-item-container:nth-child(even) {
+    background-color: var(--white);
+}
+
+.account-item-container:nth-child(even) {
+    background-color: var(--white);
+}
+
+@tailwind utilities;
